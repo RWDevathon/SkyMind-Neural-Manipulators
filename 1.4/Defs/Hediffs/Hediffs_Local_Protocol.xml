@@ -14,7 +14,7 @@
         <defName>ATNM_RampageProtocol</defName>
         <label>Neural rampage</label>
         <labelNoun>an induced rampage</labelNoun>
-        <description>The SkyMind neural manipulator has hijacked the consciousness and is stimulating the pawn's combat processing centers and suppressing all other non-essential neural processes entirely. Driven to bloodlust, the pawn will fight with reckless abandon and energy until death or the protocol is terminated - whichever comes first. The SkyMind Core ensures this rampage is directed solely at enemy targets, taking full control of the subject.</description>
+        <description>The SkyMind neural manipulator has hijacked the consciousness and is stimulating the pawn's combat processing centers and suppressing all other non-essential neural processes entirely. Driven to bloodlust, the pawn will fight with reckless abandon and energy until death or the protocol is terminated - whichever comes first. The SkyMind Core can prevent rampaging subjects from attacking one another, but does not prevent friendly fire.</description>
         <stages>
             <li>
                 <capMods>

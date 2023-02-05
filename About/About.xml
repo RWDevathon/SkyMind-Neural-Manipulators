@@ -13,9 +13,12 @@
             <downloadUrl>https://github.com/RWDevathon/Android-Tiers-Reforged.git</downloadUrl>
         </li>
     </modDependencies>
+    <loadAfter>
+        <li>Killathon.AndroidTiersReforged</li><!-- Dependency -->
+    </loadAfter>
     <packageId>Killathon.AndroidTiersNeuralManipulation</packageId>
     <description><![CDATA[
-A sub-mod for Android Tiers Reforged, implementing the neural manipulation implant and core assistant. With these tools and a SkyMind Core, you will be able to exert ever greater - and more brutal - means of influence over your pawns. From the ability to invoke horrific rampages to outright ripping a consciousness apart and inserting a new random one in, there is a reason the technology for this is outlawed in all law-abiding regions of space.
+A sub-mod for Android Tiers Reforged, implementing the neural manipulation implant and digital commander. With these tools and a SkyMind Core, you will be able to exert ever greater - and more brutal - means of influence over your pawns. From the ability to invoke horrific rampages to outright ripping a consciousness apart and inserting a new random one in, there is a reason the technology for this is outlawed in all law-abiding regions of space.
 
 Another reason that it's great to be out on the Rim, hmm?
 
