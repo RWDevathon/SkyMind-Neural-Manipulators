@@ -4,7 +4,7 @@
 	<!-- Illegal state messages -->
     <ATNM_CanNotCancelProtocol>Can not cancel current protocol</ATNM_CanNotCancelProtocol>
     <ATNM_TerrorProtocolRequiresSlave>Only slaves can be terrorized</ATNM_TerrorProtocolRequiresSlave>
-    <ATNM_CultivationProtocolRequiresLearningFactor>Requires the ability to learn</ATNM_CultivationProtocolRequiresLearningFactor>
+    <ATNM_CultivationProtocolRequiresNonPrisoner>Only non-prisoners can be cultivated</ATNM_CultivationProtocolRequiresNonPrisoner>
     <ATNM_ConversionProtocolUnusableOnUnwavering>Unusable on Unwavering pawns</ATNM_ConversionProtocolUnusableOnUnwavering>
 
     <!-- Legal state messages -->

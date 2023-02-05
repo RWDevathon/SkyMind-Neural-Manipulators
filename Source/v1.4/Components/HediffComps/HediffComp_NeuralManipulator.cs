@@ -37,7 +37,6 @@ namespace ATReforged
             base.CompPostMake();
 
             protocol = ManipulationProtocol.None;
-            canCultivateSkillPoints = !Utils.IsConsideredMechanicalDrone(Pawn);
         }
 
         public override void CompExposeData()
@@ -46,7 +45,6 @@ namespace ATReforged
 
             Scribe_Values.Look(ref protocol, "ATNM_manipulationProtocol", ManipulationProtocol.None);
             Scribe_Values.Look(ref lastCommandTick, "ATNM_lastCommandTick", -1250);
-            Scribe_Values.Look(ref canCultivateSkillPoints, "ATNM_canCultivateSkillPoints", true);
             Scribe_References.Look(ref protocolHediff, "ATNM_protocolHediff");
         }
 
@@ -159,8 +157,8 @@ namespace ATReforged
                         tooltip = new TipSignal("ATNM_HarvestProtocolTooltip".Translate(), 0.1f)
                     });
 
-                    // Allow Cultivation protocol. Only available for pawns who have a def-defined global learning speed above 50%.
-                    if (canCultivateSkillPoints)
+                    // Allow Cultivation protocol. Can only be used on non-prisoners.
+                    if (Pawn.IsFreeColonist)
                     {
                         opts.Add(new FloatMenuOption("ATNM_CultivationProtocol".Translate(), delegate
                         {
@@ -175,7 +173,7 @@ namespace ATReforged
                     }
                     else
                     {
-                        opts.Add(new FloatMenuOption("ATNM_CultivationProtocolRequiresLearningFactor".Translate(), null));
+                        opts.Add(new FloatMenuOption("ATNM_CultivationProtocolRequiresNonPrisoner".Translate(), null));
                     }
 
                     // Allow Conversion protocol. Only available for pawns that do not have the "Unwavering" condition.
@@ -227,6 +225,5 @@ namespace ATReforged
         Hediff protocolHediff;
         ManipulationProtocol protocol;
         int lastCommandTick = -1250;
-        bool canCultivateSkillPoints = false;
     }
 }
