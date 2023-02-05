@@ -8,7 +8,8 @@
     	<label>Digital commander</label>
         <description>This installed chip is extremely sophisticated and acts as a neural manipulator for androids, with the necessary override commands and hardcoded control links to overpower the core consciousness. Through this chip, a connected SkyMind Core can overrule autonomous decision-making and exert much greater control.\n\nWithout a SkyMind connection and Core, it does nothing. Since drones can not use the SkyMind network, it is useless to them.</description>
         <stages>
-			<li> <!-- Necessary to include, as excluding this will prevent the ThoughtWorker from working. -->
+			<li>
+                <hungerRateFactor>1.25</hungerRateFactor>
 			</li>
 		</stages>
         <comps>
