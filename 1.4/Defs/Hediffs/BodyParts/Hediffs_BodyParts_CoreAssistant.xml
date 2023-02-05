@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- SkyMind Digital Commander -->
+
+  	<HediffDef ParentName="ATR_AddedBodyPartCoreAssistantBase">
+    	<defName>ATNM_DigitalCommander</defName>
+    	<label>Digital commander</label>
+        <description>This installed chip is extremely sophisticated and acts as a neural manipulator for androids, with the necessary override commands and hardcoded control links to overpower the core consciousness. Through this chip, a connected SkyMind Core can overrule autonomous decision-making and exert much greater control.\n\nWithout a SkyMind connection and Core, it does nothing. Since drones can not use the SkyMind network, it is useless to them.</description>
+        <stages>
+			<li> <!-- Necessary to include, as excluding this will prevent the ThoughtWorker from working. -->
+			</li>
+		</stages>
+        <comps>
+            <li>
+                <compClass>ATReforged.HediffComp_NeuralManipulator</compClass>
+            </li>
+        </comps>
+    	<spawnThingOnRemoved>ATNM_DigitalCommander</spawnThingOnRemoved>
+  	</HediffDef>
+
+  	<ThingDef ParentName="ATR_BodyPartCoreAssistantBase">
+    	<defName>ATNM_DigitalCommander</defName>
+    	<label>Digital commander</label>
+	  	<description>This sub-core chip is extremely sophisticated and acts as a neural manipulator for androids, with the necessary override commands and hardcoded control links to overpower the core consciousness. Through this chip, a connected SkyMind Core can overrule autonomous decision-making and exert much greater control.\n\nWithout a SkyMind connection and Core, it does nothing.</description>
+        <techLevel>Ultra</techLevel>
+        <graphicData>
+            <texPath>Things/Items/BodyParts/ManipulatorChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>700</MarketValue>
+        </statBases>
+        <recipeMaker>
+			<researchPrerequisite>ATR_SkyMindCore</researchPrerequisite>
+        </recipeMaker>
+		<costList>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>6</ComponentSpacer>
+		</costList>
+  	</ThingDef>
+
+  	<RecipeDef ParentName="ATR_SurgeryCoreAssistant">
+		<defName>ATR_Install_DigitalCommander</defName>
+		<label>Install digital commander</label>
+		<description>Installs a digital commander into the sub-core assistant slot of a unit.</description>
+        <researchPrerequisite>ATR_SkyMindCore</researchPrerequisite>
+        <jobString>Installing digital commander.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATNM_DigitalCommander</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATNM_DigitalCommander</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ATNM_DigitalCommander</addsHediff>
+	</RecipeDef>
+
+</Defs>

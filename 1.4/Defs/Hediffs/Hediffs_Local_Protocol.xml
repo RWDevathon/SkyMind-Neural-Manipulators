@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef Name="ATNM_ProtocolHediffBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>_</description>
+        <defaultLabelColor>(0.9, 0.66, 0.01)</defaultLabelColor>
+        <isBad>false</isBad>
+        <recordDownedTale>false</recordDownedTale>
+        <everCurableByItem>false</everCurableByItem>
+    </HediffDef>
+
+    <HediffDef ParentName="ATNM_ProtocolHediffBase">
+        <defName>ATNM_RampageProtocol</defName>
+        <label>Neural rampage</label>
+        <labelNoun>an induced rampage</labelNoun>
+        <description>The SkyMind neural manipulator has hijacked the consciousness and is stimulating the pawn's combat processing centers and suppressing all other non-essential neural processes entirely. Driven to bloodlust, the pawn will fight with reckless abandon and energy until death or the protocol is terminated - whichever comes first. The SkyMind Core ensures this rampage is directed solely at enemy targets, taking full control of the subject.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MoveSpeed>1</MoveSpeed>
+                    <MeleeDodgeChance>4</MeleeDodgeChance>
+                    <MeleeHitChance>4</MeleeHitChance>
+                </statOffsets>
+                <statFactors>
+                    <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">0.5</StaggerDurationFactor>
+                </statFactors>
+                <restFallFactor>1.5</restFallFactor>
+                <hungerRateFactor>1.5</hungerRateFactor>
+                <totalBleedFactor>0.75</totalBleedFactor>
+                <painFactor>0.75</painFactor>
+            </li>
+        </stages>
+        <comps>
+            <li Class="ATReforged.HediffCompProperties_MentalStateProtocol">
+                <mentalState>ATNM_MentalState_Rampage</mentalState>
+                <endingMayCauseConfusion>true</endingMayCauseConfusion>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="ATNM_ProtocolHediffBase">
+        <defName>ATNM_StasisProtocol</defName>
+        <label>Stasis protocol</label>
+        <labelNoun>an induced stasis</labelNoun>
+        <description>The SkyMind neural manipulator is suppressing neural activity to only essential activity - an artificial hibernative state.The SkyMind Core can use reallocate unused neural activity toward enhancing the unconscious body's ability to regenerate.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>1</offset>
+                    </li>
+                </capMods>
+                <naturalHealingFactor>1.5</naturalHealingFactor>
+            </li>
+        </stages>
+        <comps>
+            <li Class="ATReforged.HediffCompProperties_PotentialSideEffectOnApplied">
+                <hediff>PsychicComa</hediff>
+                <chanceToOccur>0.05</chanceToOccur>
+                <removeOriginalIfEffectOccurs>false</removeOriginalIfEffectOccurs>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="ATNM_ProtocolHediffBase">
+        <defName>ATNM_TerrorProtocol</defName>
+        <label>Terror protocol</label>
+        <labelNoun>an induced waking nightmare</labelNoun>
+        <description>The SkyMind neural manipulator is sending overwhelming quantities and scales of contradictory, unnerving signals coursing through the slave's mind. The signals are garbage and random, giving the subject an almost dream-like nightmare in the real world, as their every sense is overloaded and terrorized. This effect is known to cause rapid mental breakdowns and occasional heart attacks, but is extremely effective at slave suppression.</description>
+        <stages>
+            <li>
+                <mentalBreakMtbDays>20</mentalBreakMtbDays>
+                <opinionOfOthersFactor>0.5</opinionOfOthersFactor>
+                <socialFightChanceFactor>2</socialFightChanceFactor>
+            </li>
+        </stages>
+        <comps>
+            <li Class="ATReforged.HediffCompProperties_SuppressionEffecter">
+                <organicHediff>HeartAttack</organicHediff>
+                <organicBodyPartsToAffect><li>Heart</li></organicBodyPartsToAffect>
+                <mechanicalHediff>ATR_RogueMechanites</mechanicalHediff>
+                <mechanicalBodyPartsToAffect><li>ATR_MechaniteStorage</li></mechanicalBodyPartsToAffect>
+                <meanTimeBeforeOccurring>2500</meanTimeBeforeOccurring> <!-- days, equivalent to heart attack's odds at 80% of natural lifespan -->
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="ATNM_ProtocolHediffBase">
+        <defName>ATNM_NumbnessProtocol</defName>
+        <label>Numbness protocol</label>
+        <labelNoun>an induced desensitization</labelNoun>
+        <description>The SkyMind neural manipulator is suppressing most non-essential neural activity. The reduction in consciousness reduces the ability to feel worry, even if it is distinctly not euphoric. This effect is known for making subjects seem apathetic about the world, and equally sluggish and desensitized.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+                <painFactor>0</painFactor>
+                <forgetMemoryThoughtMtbDays>10</forgetMemoryThoughtMtbDays>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="ATNM_ProtocolHediffBase">
+        <defName>ATNM_CultivationProtocol</defName>
+        <label>Cultivation protocol</label>
+        <labelNoun>an induced brain drain</labelNoun>
+        <description>The SkyMind neural manipulator is intercepting incoming neural information and relaying it to the network for skill insights. While this prevents the subject from learning skills, it does not influence decision making or other neural functionality.</description>
+        <stages>
+            <li>
+                <statFactors>
+                    <GlobalLearningFactor>0</GlobalLearningFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li>
+                <compClass>ATReforged.HediffComp_CultivationEffecter</compClass>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="ATNM_ProtocolHediffBase">
+        <defName>ATNM_ConversionProtocol</defName>
+        <label>Conversion protocol</label>
+        <labelNoun>an induced confidence crises</labelNoun>
+        <description>The SkyMind neural manipulator is feeding propaganda and solicitations into the subject consciousness to reduce its ability to resist persuasion at the cost of hacking points, while also causing a great deal of discomfort. While unwavering individuals are immune, weaker minds will lose resistance, will and certainty.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.2</CertaintyLossFactor>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li>
+                <compClass>ATReforged.HediffComp_ConversionEffecter</compClass>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="ATNM_ProtocolHediffBase">
+        <defName>ATNM_ReplacementProtocol</defName>
+        <label>Replacement protocol</label>
+        <labelNoun>an induced personality death</labelNoun>
+        <description>The SkyMind neural manipulator is systematically purging the consciousness of this pawn, in preparation for the creation of a new one to insert. The victim is unconscious, and is blissfully unaware - others will be thoroughly horrified. Upon completion, the subject's consciousness is eliminated and replaced with a new, random one.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li>
+                <compClass>ATReforged.HediffComp_ReplacementEffecter</compClass>
+            </li>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>

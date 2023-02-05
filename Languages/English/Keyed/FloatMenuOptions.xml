@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Illegal state messages -->
+    <ATNM_CanNotCancelProtocol>Can not cancel current protocol</ATNM_CanNotCancelProtocol>
+    <ATNM_TerrorProtocolRequiresSlave>Only slaves can be terrorized</ATNM_TerrorProtocolRequiresSlave>
+    <ATNM_CultivationProtocolRequiresLearningFactor>Requires the ability to learn</ATNM_CultivationProtocolRequiresLearningFactor>
+    <ATNM_ConversionProtocolUnusableOnUnwavering>Unusable on Unwavering pawns</ATNM_ConversionProtocolUnusableOnUnwavering>
+
+    <!-- Legal state messages -->
+    <ATNM_NoneProtocol>None</ATNM_NoneProtocol>
+    <ATNM_NoneProtocolTooltip>Unassign current protocol and set the manipulator to minimal functionality.</ATNM_NoneProtocolTooltip>
+    <ATNM_RampageProtocol>Rampage</ATNM_RampageProtocol>
+    <ATNM_RampageProtocolTooltip>Induce a rampage, causing the pawn to attack all non-rampaging pawns and gain major stat boosts.</ATNM_RampageProtocolTooltip>
+    <ATNM_StasisProtocol>Stasis</ATNM_StasisProtocol>
+    <ATNM_StasisProtocolTooltip>Incapacitate the subject, knocking them out and allocating neural resources toward regeneration.</ATNM_StasisProtocolTooltip>
+    <ATNM_TerrorProtocol>Terror</ATNM_TerrorProtocol>
+    <ATNM_TerrorProtocolTooltip>Terrorize the subject, swiftly increasing suppression and preventing rebellion at a steep mood penalty.</ATNM_TerrorProtocolTooltip>
+    <ATNM_NumbnessProtocol>Numbness</ATNM_NumbnessProtocol>
+    <ATNM_NumbnessProtocolTooltip>Numb the subject's consciousness, gaining significant mood buffs and preventing all pain as a result.</ATNM_NumbnessProtocolTooltip>
+    <ATNM_HarvestProtocol>Harvest</ATNM_HarvestProtocol>
+    <ATNM_HarvestProtocolTooltip>Harvest the subject's skills all at once for skill and hacking points, killing the consciousness. (Opens a confirmation dialog)</ATNM_HarvestProtocolTooltip>
+    <ATNM_CultivationProtocol>Cultivation</ATNM_CultivationProtocol>
+    <ATNM_CultivationProtocolTooltip>Cultivate server skill points by intercepting learning, idly producing skill points but preventing all learning.</ATNM_CultivationProtocolTooltip>
+    <ATNM_ConversionProtocol>Conversion</ATNM_ConversionProtocol>
+    <ATNM_ConversionProtocolTooltip>Convert hacking points into propaganda, reducing the subject's resistance, will, and certainty depending on their personal resistance.</ATNM_ConversionProtocolTooltip>
+    <ATNM_ReplacementProtocol>Replacement</ATNM_ReplacementProtocol>
+    <ATNM_ReplacementProtocolTooltip>Replace the subject's consciousness with a new, random one. The manipulator chip will burn out in the process, and the consciousness will die. (Opens a confirmation dialog)</ATNM_ReplacementProtocolTooltip>
+
+</LanguageData>

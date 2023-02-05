@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>ATNM_NeuralManipulator</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>ATNM_NeuralManipulator</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>manipulation victim</label>
+                <description>I have a neural manipulator installed. At any moment, I could lose control of reality.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ATNM_DigitalCommander</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>ATNM_DigitalCommander</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>manipulation victim</label>
+                <description>I have a digital commander installed. At any moment, I could lose control of reality.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ATNM_TerrorProtocol</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>ATNM_TerrorProtocol</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>terrorized</label>
+                <description>None of this makes sense! I can't escape this nightmare! Get me out!</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ATNM_ConversionProtocol</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>ATNM_ConversionProtocol</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>doubtful</label>
+                <description>There's voices. I can't tell where they come from, but they question everything. I don't know what I believe anymore.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ATNM_NumbnessProtocol</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>ATNM_NumbnessProtocol</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>numb</label>
+                <description>I feel nothing. The worries of the world seem slightly further away.</description>
+                <baseMoodEffect>25</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

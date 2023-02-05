@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- SkyMind Neural Manipulator -->
+
+    <HediffDef ParentName="ATR_ImplantCoreBase">
+        <defName>ATNM_NeuralManipulator</defName>
+        <label>Neural manipulator</label>
+        <description>This device is installed directly into the brain, giving the SkyMind network intimate access to the subject's neural structure. Through this relay, a connected Core can instantaneously trigger insatiable bloodlusts, serene coma-like trances, and various other effects - all without the consent of the implant's host. Naturally, this is extremely unnerving, but does allow all the same functionality as a transceiver.\n\nSuccessfully implanting or removing this implant has no other major consequences.</description>
+        <stages>
+			<li> <!-- Necessary to include, as excluding this will prevent the ThoughtWorker from working. -->
+			</li>
+		</stages>
+        <comps>
+            <li Class="ATReforged.HediffCompProperties_SkyMindEffecter">
+                <allowsConnection>true</allowsConnection>
+                <isTransceiver>true</isTransceiver>
+            </li>
+            <li>
+                <compClass>ATReforged.HediffComp_NeuralManipulator</compClass>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <ThingDef ParentName="ATR_BodyPartCoreBase">
+        <defName>ATNM_NeuralManipulator</defName>
+        <graphicData>
+            <texPath>Things/Items/BodyParts/ManipulatorChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <label>Neural manipulator</label>
+        <description>This device is installed directly into the pawn's brain, giving the SkyMind network intimate access to the subject's neural structure. Through this relay, a connected Core can instantaneously trigger insatiable bloodlusts, serene coma-like trances, and various other effects - all without the consent of the implant's host. Naturally, this is extremely unnerving, but does allow all the same functionality as a transceiver.\n\nSuccessfully implanting or removing this implant has no other major consequences.</description>
+        <recipeMaker>
+            <researchPrerequisite>ATR_SkyMindCore</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>6</ComponentSpacer>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="ATR_SurgeryCoreOrganic">
+        <defName>ATR_Install_NeuralManipulator</defName>
+        <label>Install neural manipulator</label>
+        <description>Installs and initializes a neural manipulator in the subjects brain. If connected to the SkyMind network with an active Core, a whole swath of horrific things could be done to this poor person.</description>
+        <researchPrerequisite>ATR_SkyMindCore</researchPrerequisite>
+        <jobString>Installing neural manipulator.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATNM_NeuralManipulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATNM_NeuralManipulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+        <addsHediff>ATNM_NeuralManipulator</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryRemoveImplantBase">
+        <workerClass>ATReforged.Recipe_RemoveOrganicSkyMindInterface</workerClass>
+        <defName>ATR_RemoveNeuralManipulator</defName>
+        <label>remove neural manipulator</label>
+        <description>Remove the neural manipulator implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>ATNM_NeuralManipulator</ThingDef>
+            <HediffDef>ATNM_NeuralManipulator</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing neural manipulator.</jobString>
+        <removesHediff>ATNM_NeuralManipulator</removesHediff>
+    </RecipeDef>
+
+</Defs>

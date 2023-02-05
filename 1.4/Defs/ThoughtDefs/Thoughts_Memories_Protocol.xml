@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>ATNM_PostTerrorStress</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackedEffectMultiplier>1.1</stackedEffectMultiplier>
+        <stages>
+            <li>
+                <label>recently terrorized</label>
+                <description>At any moment, I could be sent back to that nightmare. I don't want to go back. I won't!</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>
