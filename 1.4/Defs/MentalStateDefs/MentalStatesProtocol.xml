@@ -4,7 +4,7 @@
     <MentalStateDef ParentName="BaseMentalState">
         <defName>ATNM_MentalState_Rampage</defName>
         <stateClass>ATReforged.MentalState_Rampage</stateClass>
-        <label>furiously attacking</label>
+        <label>remotely enraged</label>
         <category>Aggro</category>
         <nameColor>(0.7,0.5,0.5)</nameColor>
         <baseInspectLine>Hunting enemies</baseInspectLine>

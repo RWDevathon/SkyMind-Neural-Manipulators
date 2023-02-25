@@ -43,7 +43,7 @@
     <RecipeDef ParentName="ATR_SurgeryCoreOrganic">
         <defName>ATR_Install_NeuralManipulator</defName>
         <label>Install neural manipulator</label>
-        <description>Installs and initializes a neural manipulator in the subjects brain. If connected to the SkyMind network with an active Core, a whole swath of horrific things could be done to this poor person.</description>
+        <description>Installs and initializes a neural manipulator in the subject's brain. If connected to the SkyMind network with an active Core, a whole swath of horrific things could be done to this poor person.</description>
         <researchPrerequisite>ATR_SkyMindCore</researchPrerequisite>
         <jobString>Installing neural manipulator.</jobString>
 		<ingredients>

@@ -10,7 +10,7 @@
                 <subNodes>
                     <li Class="ThinkNode_Priority">
                         <subNodes>
-                            <li Class="JobGiver_AIFightEnemies" />
+                            <li Class="ATReforged.JobGiver_AIExterminatorFight" />
                             <li Class="JobGiver_WanderAnywhere">
                                 <maxDanger>Deadly</maxDanger>
                             </li>
