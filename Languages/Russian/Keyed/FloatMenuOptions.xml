@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Illegal state messages -->
+    <ATNM_CanNotCancelProtocol>Невозможно отменить текущий протокол</ATNM_CanNotCancelProtocol>
+    <ATNM_TerrorProtocolRequiresSlave>Терроризировать можно только рабов</ATNM_TerrorProtocolRequiresSlave>
+    <ATNM_CultivationProtocolRequiresNonPrisoner>Только не заключенных можно культивировать</ATNM_CultivationProtocolRequiresNonPrisoner>
+    <ATNM_ConversionProtocolUnusableOnUnwavering>Нельзя использовать на непоколебимых пешках</ATNM_ConversionProtocolUnusableOnUnwavering>
+
+    <!-- Legal state messages -->
+    <ATNM_NoneProtocol>None</ATNM_NoneProtocol>
+    <ATNM_NoneProtocolTooltip>Снимите назначение текущего протокола и переведите манипулятор в режим минимальной функциональности.</ATNM_NoneProtocolTooltip>
+    <ATNM_RampageProtocol>Буйство</ATNM_RampageProtocol>
+    <ATNM_RampageProtocolTooltip>Вызывает ярость, заставляя пешку атаковать все пешки, не в буйстве, и получать значительные прибавки к статам.</ATNM_RampageProtocolTooltip>
+    <ATNM_StasisProtocol>Стазис</ATNM_StasisProtocol>
+    <ATNM_StasisProtocolTooltip>Выведите субъекта из строя, вырубив его и направив нейронные ресурсы на регенерацию.</ATNM_StasisProtocolTooltip>
+    <ATNM_TerrorProtocol>Террор</ATNM_TerrorProtocol>
+    <ATNM_TerrorProtocolTooltip>Запугать субъект, быстро усиливая подавление и предотвращая восстание при резком снижении настроения.</ATNM_TerrorProtocolTooltip>
+    <ATNM_NumbnessProtocol>Онемение</ATNM_NumbnessProtocol>
+    <ATNM_NumbnessProtocolTooltip>Притупляет сознание субъекта, получение значительных баффов настроения и в результате предотвращение любой боли.</ATNM_NumbnessProtocolTooltip>
+    <ATNM_HarvestProtocol>Жатва</ATNM_HarvestProtocol>
+    <ATNM_HarvestProtocolTooltip>Соберите все навыки субъекта за очки навыков и взлома, убив сознание. (Открывается диалог подтверждения)</ATNM_HarvestProtocolTooltip>
+    <ATNM_CultivationProtocol>Культивация</ATNM_CultivationProtocol>
+    <ATNM_CultivationProtocolTooltip>Накапливайте очки умений сервера, перехватывая обучение, вхолостую производя очки умений, но препятствуя любому обучению.</ATNM_CultivationProtocolTooltip>
+    <ATNM_ConversionProtocol>Преобразование</ATNM_ConversionProtocol>
+    <ATNM_ConversionProtocolTooltip>Преобразует очки взлома в пропаганду, снижая сопротивляемость, волю и уверенность субъекта в зависимости от его личной сопротивляемости.</ATNM_ConversionProtocolTooltip>
+    <ATNM_ReplacementProtocol>Замена</ATNM_ReplacementProtocol>
+    <ATNM_ReplacementProtocolTooltip>Замените сознание субъекта на новое, случайное. В процессе чип манипулятора сгорит, и сознание погибнет. (Открывается диалог подтверждения)</ATNM_ReplacementProtocolTooltip>
+
+</LanguageData>
