@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ATNM_SetProtocol>Задать протокол</ATNM_SetProtocol>
+	<ATNM_SetProtocolDesc>Текущий протокол: {0}. Нажмите, чтобы назначить новый протокол.</ATNM_SetProtocolDesc>
+
+    <ATNM_protocolChangedTooRecently>Протоколы можно менять только раз в полчаса.</ATNM_protocolChangedTooRecently>
+
+</LanguageData>
