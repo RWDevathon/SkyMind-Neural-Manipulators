@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ATNM_NeuralManipulator.stages.0.label>жертва манипулирования</ATNM_NeuralManipulator.stages.0.label>
+  <ATNM_NeuralManipulator.stages.0.description>В меня установлен нейронный манипулятор. В любой момент я могу потерять контроль над реальностью.</ATNM_NeuralManipulator.stages.0.description>
+
+  <ATNM_DigitalCommander.stages.0.label>жертва манипулирования</ATNM_DigitalCommander.stages.0.label>
+  <ATNM_DigitalCommander.stages.0.description>В меня установлен цифровой командир. В любой момент я могу потерять контроль над реальностью.</ATNM_DigitalCommander.stages.0.description>
+
+  <ATNM_TerrorProtocol.stages.0.label>терроризировал</ATNM_TerrorProtocol.stages.0.label>
+  <ATNM_TerrorProtocol.stages.0.description>Все это не имеет смысла! Я не могу выбраться из этого кошмара! Вытащите меня!</ATNM_TerrorProtocol.stages.0.description>
+
+  <ATNM_ConversionProtocol.stages.0.label>подозрительный</ATNM_ConversionProtocol.stages.0.label>
+  <ATNM_ConversionProtocol.stages.0.description>Эти голоса. Я не могу сказать, откуда они исходят, но они ставят под сомнение все. Я уже не знаю, во что верить.</ATNM_ConversionProtocol.stages.0.description>
+
+  <ATNM_NumbnessProtocol.stages.0.label>онемевший</ATNM_NumbnessProtocol.stages.0.label>
+  <ATNM_NumbnessProtocol.stages.0.description>Я ничего не чувствую. Все заботы мира кажутся далекими.</ATNM_NumbnessProtocol.stages.0.description>
+
+
+</LanguageData>
