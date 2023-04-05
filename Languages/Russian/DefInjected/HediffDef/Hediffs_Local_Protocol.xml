@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ATNM_RampageProtocol.label>Нейронное буйство</ATNM_RampageProtocol.label>
+	<ATNM_RampageProtocol.labelNoun>вызывает буйство</ATNM_RampageProtocol.labelNoun>
+	<ATNM_RampageProtocol.description>Нейронный манипулятор SkyMind захватил сознание и стимулирует центры боевой обработки информации пешки, полностью подавляя все остальные неосновные нейронные процессы. Движимая жаждой крови, пешка будет сражаться с безрассудством и энергией до самой смерти или до прекращения действия протокола - в зависимости от того, что наступит раньше. SkyMind Core может предотвратить нападение буйных субъектов друг на друга, но не предотвращает дружественный огонь.</ATNM_RampageProtocol.description>
+
+	<ATNM_StasisProtocol.label>Протокол стазиса</ATNM_StasisProtocol.label>
+	<ATNM_StasisProtocol.labelNoun>вызывает стазис</ATNM_StasisProtocol.labelNoun>
+	<ATNM_StasisProtocol.description>Нейронный манипулятор SkyMind подавляет нейронную активность только до необходимой - искусственное спящее состояние. Ядро SkyMind может использовать перераспределение неиспользуемой нейронной активности для повышения способности бессознательного тела к регенерации.</ATNM_StasisProtocol.description>
+
+	<ATNM_TerrorProtocol.label>Протокол террора</ATNM_TerrorProtocol.label>
+	<ATNM_TerrorProtocol.labelNoun>вызывает кошмар наяву</ATNM_TerrorProtocol.labelNoun>
+	<ATNM_TerrorProtocol.description>Нейронный манипулятор SkyMind посылает подавляющее количество и масштабы противоречивых, нервирующих сигналов, проходящих через разум раба. Сигналы беспорядочны и случайны, что создает у субъекта почти кошмарный сон в реальном мире, поскольку все его чувства перегружены и терроризированы. Этот эффект, как известно, вызывает быстрые психические срывы и иногда сердечные приступы, но чрезвычайно эффективен для подавления раба.</ATNM_TerrorProtocol.description>
+
+	<ATNM_NumbnessProtocol.label>Протокол онемения</ATNM_NumbnessProtocol.label>
+	<ATNM_NumbnessProtocol.labelNoun>вызывает десенсибилизацию</ATNM_NumbnessProtocol.labelNoun>
+	<ATNM_NumbnessProtocol.description>Нейронный манипулятор SkyMind подавляет большинство неосновных видов нейронной активности. Снижение сознания уменьшает способность испытывать беспокойство, даже если оно явно не эйфорическое. Этот эффект известен тем, что заставляет испытуемых казаться апатичными по отношению к миру, а также вялыми и десенсибилизированными.</ATNM_NumbnessProtocol.description>
+
+	<ATNM_CultivationProtocol.label>Протокол культивирования</ATNM_CultivationProtocol.label>
+	<ATNM_CultivationProtocol.labelNoun>вызывает утечку мозгов</ATNM_CultivationProtocol.labelNoun>
+	<ATNM_CultivationProtocol.description>Нейронный манипулятор SkyMind перехватывает входящую нейронную информацию и передает ее в сеть для изучения навыков. Хотя это мешает субъекту изучать навыки, это не влияет на принятие решений или другие нейронные функции.</ATNM_CultivationProtocol.description>
+
+	<ATNM_ConversionProtocol.label>Протокол преобразования</ATNM_ConversionProtocol.label>
+	<ATNM_ConversionProtocol.labelNoun>вызывает кризисы доверия</ATNM_ConversionProtocol.labelNoun>
+	<ATNM_ConversionProtocol.description>Нейронный манипулятор SkyMind подает в сознание субъекта пропаганду и упрашивания, чтобы снизить его способность сопротивляться убеждению ценой очков взлома, а также причинить сильный дискомфорт. В то время как непоколебимые личности невосприимчивы, слабые умы будут терять устойчивость, волю и уверенность.</ATNM_ConversionProtocol.description>
+
+	<ATNM_ReplacementProtocol.label>Протокол замены</ATNM_ReplacementProtocol.label>
+	<ATNM_ReplacementProtocol.labelNoun>вызывает смерть личности</ATNM_ReplacementProtocol.labelNoun>
+	<ATNM_ReplacementProtocol.description>Нейронный манипулятор SkyMind систематически очищает сознание этой пешки, готовясь к созданию новой, которую нужно вставить. Жертва находится в бессознательном состоянии и ничего не подозревает - другие будут в полном ужасе. По завершении сознание субъекта удаляется и заменяется новым, случайным.</ATNM_ReplacementProtocol.description>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- SkyMind Digital Commander -->
+
+  <ATR_Install_DigitalCommander.label>Установить цифровой командир</ATR_Install_DigitalCommander.label>
+  <ATR_Install_DigitalCommander.description>Устанавливает цифрового командира в слот помощника субъядра юнита.</ATR_Install_DigitalCommander.description>
+  <ATR_Install_DigitalCommander.jobString>Установка цифрового коммандира.</ATR_Install_DigitalCommander.jobString>
+
+
+</LanguageData>
