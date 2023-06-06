@@ -3,13 +3,13 @@
 
   <!-- SkyMind Neural Manipulator -->
 
-  <ATR_Install_NeuralManipulator.label>Установить нейронный манипулятор</ATR_Install_NeuralManipulator.label>
-  <ATR_Install_NeuralManipulator.description>Устанавливает и инициализирует нейронный манипулятор в мозгу субъекта. Если подключить его к сети SkyMind с активным ядром, с бедным человеком можно сделать целый ряд ужасных вещей.</ATR_Install_NeuralManipulator.description>
-  <ATR_Install_NeuralManipulator.jobString>Установка нейронного манипулятора.</ATR_Install_NeuralManipulator.jobString>
+  <SMNM_Install_NeuralManipulator.label>Установить нейронный манипулятор</SMNM_Install_NeuralManipulator.label>
+  <SMNM_Install_NeuralManipulator.description>Устанавливает и инициализирует нейронный манипулятор в мозгу субъекта. Если подключить его к сети SkyMind с активным ядром, с бедным человеком можно сделать целый ряд ужасных вещей.</SMNM_Install_NeuralManipulator.description>
+  <SMNM_Install_NeuralManipulator.jobString>Установка нейронного манипулятора.</SMNM_Install_NeuralManipulator.jobString>
 
-  <ATR_RemoveNeuralManipulator.label>извлечь нейронный манипулятор</ATR_RemoveNeuralManipulator.label>
-  <ATR_RemoveNeuralManipulator.description>Извлеките имплантатированный нейронный манипулятор.</ATR_RemoveNeuralManipulator.description>
-  <ATR_RemoveNeuralManipulator.jobString>Удаление нейронного манипулятора.</ATR_RemoveNeuralManipulator.jobString>
+  <SMNM_RemoveNeuralManipulator.label>извлечь нейронный манипулятор</SMNM_RemoveNeuralManipulator.label>
+  <SMNM_RemoveNeuralManipulator.description>Извлеките имплантатированный нейронный манипулятор.</SMNM_RemoveNeuralManipulator.description>
+  <SMNM_RemoveNeuralManipulator.jobString>Удаление нейронного манипулятора.</SMNM_RemoveNeuralManipulator.jobString>
 
 
 </LanguageData>

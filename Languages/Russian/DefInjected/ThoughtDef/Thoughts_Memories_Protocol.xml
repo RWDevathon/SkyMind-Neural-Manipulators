@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <ATNM_PostTerrorStress.stages.0.label>недавно терроризировал</ATNM_PostTerrorStress.stages.0.label>
-  <ATNM_PostTerrorStress.stages.0.description>В любой момент меня могут отправить обратно в этот кошмар. Я не хочу возвращаться. Не хочу!</ATNM_PostTerrorStress.stages.0.description>
+  <SMNM_PostTerrorStress.stages.0.label>недавно терроризировал</SMNM_PostTerrorStress.stages.0.label>
+  <SMNM_PostTerrorStress.stages.0.description>В любой момент меня могут отправить обратно в этот кошмар. Я не хочу возвращаться. Не хочу!</SMNM_PostTerrorStress.stages.0.description>
 
 
 </LanguageData>

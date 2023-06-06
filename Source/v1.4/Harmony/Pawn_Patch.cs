@@ -1,9 +1,8 @@
 ﻿using Verse;
 using HarmonyLib;
-using RimWorld;
 using System.Collections.Generic;
 
-namespace ATReforged
+namespace SkyMind
 {
     // HediffComp gizmos are not called on pawns that in a mental state. This patch makes sure to still add it if the pawn is in our particular mental state.
     internal class Pawn_Patch
@@ -19,7 +18,7 @@ namespace ATReforged
                 }
 
                 // Only yield the hediff gizmos if in the mental state, or else it'd be added twice.
-                if (__instance.MentalStateDef == ATNM_MentalStateDefOf.ATNM_MentalState_Rampage)
+                if (__instance.MentalStateDef == SMNM_MentalStateDefOf.SMNM_MentalState_Rampage)
                 {
                     foreach (Gizmo gizmo in __instance.health.GetGizmos())
                     {

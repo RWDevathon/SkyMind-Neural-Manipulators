@@ -3,12 +3,12 @@
 </p>
 
 # Description
-Android Tiers Neural Manipulators is a sub-mod for Android Tiers Reforged, adding a new implant (one for mechanical pawns and one for organic pawns) that allows SkyMind-connected pawns to be controlled via a SkyMind Core, with 8 different possible states.
+Neural Manipulators is a sub-mod for SkyMind Network, adding a new implant that allows SkyMind-connected pawns to be controlled via a SkyMind Core, with 8 different possible states for more fine controls over pawns that possess it. They won't like it, but you might!
 
-Android Tiers itself is a mod that intends to add mechanical colonists, animals, and related mechanics to RimWorld to create a completely new playstyle and bring a very different experience to the table.
+It has compatibility for Mechanical Humanlikes: Android Tiers, by adding a Digital Commander core assistant if the mod is installed.
 
 ## Features
-* The Neural Manipulator and Digital Commander for organics and mechanicals, respectively.
+* The Neural Manipulator implant.
 * The ability to control pawns implanted with the hediff if connected to the SkyMind network with a Core active, via a new Command.
 * Eight new commands and matching mechanics to exert influence and control over subject pawns.
 * Even more abuses of sapient rights!
@@ -29,8 +29,7 @@ Android Tiers itself is a mod that intends to add mechanical colonists, animals,
 * Switching protocols (except to None) can only be done once every half hour.
 * Only one protocol may be active at a time.
 * Pawns find having this implant very unnerving, and it does increase hunger rate due to high power consumption.
-* Drones, being unable to connect to the SkyMind network and being unable to use half these protocols any way, will find no use from this implant despite it being installable.
-* The implant counts as a SkyMind Transceiver for organics, and is mutually exclusive with it and receivers.
+* The implant counts as a SkyMind Transceiver, and is mutually exclusive with it and receivers.
 
 ## Known Issues / Incompatibilities
 - None so far.

@@ -2,7 +2,7 @@
 using HarmonyLib;
 using RimWorld;
 
-namespace ATReforged
+namespace SkyMind
 {
     // Slaves currently being terrorized can not participate in slave rebellions.
     internal class SlaveRebellionUtility_Patch
@@ -18,7 +18,7 @@ namespace ATReforged
                     return;
                 }
 
-                if (pawn.health.hediffSet.HasHediff(ATNM_HediffDefOf.ATNM_TerrorProtocol))
+                if (pawn.health.hediffSet.HasHediff(SMNM_HediffDefOf.SMNM_TerrorProtocol))
                 {
                     __result = false;
                 }

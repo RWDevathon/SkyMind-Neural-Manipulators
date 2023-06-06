@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace ATReforged
+namespace SkyMind
 {
     public class HediffCompProperties_MentalStateProtocol : HediffCompProperties
     {

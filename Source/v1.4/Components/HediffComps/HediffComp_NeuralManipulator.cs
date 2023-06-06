@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace ATReforged
+namespace SkyMind
 {
     // This hediff comp is responsible for showing the various Gizmo's for controlling pawns. No controls are visible if a SkyMind connection or SkyMind Core is missing.
     public class HediffComp_NeuralManipulator : HediffComp
     {
-        public ManipulationProtocol Protocol
+        public SMNM_ManipulationProtocol Protocol
         {
             get
             {
@@ -15,9 +15,9 @@ namespace ATReforged
             }
             set
             {
-                ManipulationProtocol oldProtocol = protocol;
+                SMNM_ManipulationProtocol oldProtocol = protocol;
                 protocol = value;
-                
+
                 if (oldProtocol == protocol)
                 {
                     return;
@@ -36,16 +36,16 @@ namespace ATReforged
         {
             base.CompPostMake();
 
-            protocol = ManipulationProtocol.None;
+            protocol = SMNM_ManipulationProtocol.None;
         }
 
         public override void CompExposeData()
         {
             base.CompExposeData();
 
-            Scribe_Values.Look(ref protocol, "ATNM_manipulationProtocol", ManipulationProtocol.None);
-            Scribe_Values.Look(ref lastCommandTick, "ATNM_lastCommandTick", -1250);
-            Scribe_References.Look(ref protocolHediff, "ATNM_protocolHediff");
+            Scribe_Values.Look(ref protocol, "SMNM_SMNM_ManipulationProtocol", SMNM_ManipulationProtocol.None);
+            Scribe_Values.Look(ref lastCommandTick, "SMNM_lastCommandTick", -1250);
+            Scribe_References.Look(ref protocolHediff, "SMNM_protocolHediff");
         }
 
         // If the hediff this is attached to is removed, do cleanup.
@@ -53,177 +53,177 @@ namespace ATReforged
         {
             base.CompPostPostRemoved();
 
-            Protocol = ManipulationProtocol.None;
+            Protocol = SMNM_ManipulationProtocol.None;
         }
 
         public override IEnumerable<Gizmo> CompGetGizmos()
         {
-            if (!Utils.IsValidMindTransferTarget(Pawn) || Utils.gameComp.GetSkyMindCloudCapacity() == 0)
+            if (!SMN_Utils.IsValidMindTransferTarget(Pawn) || !SMN_Utils.gameComp.HasSkyMindCore())
                 yield break;
 
             // The gizmo will open a float menu with options when clicked (if it isn't disabled).
             Command_Action gizmo = new Command_Action
             {
-                icon = Tex.ManipulationIcon,
-                defaultLabel = "ATNM_SetProtocol".Translate(),
-                defaultDesc = "ATNM_SetProtocolDesc".Translate(protocol.ToString()),
+                icon = SMNM_Tex.ManipulationIcon,
+                defaultLabel = "SMNM_SetProtocol".Translate(),
+                defaultDesc = "SMNM_SetProtocolDesc".Translate(protocol.ToString()),
                 action = delegate ()
                 {
                     List<FloatMenuOption> opts = new List<FloatMenuOption>();
 
                     // Harvest and Replacement protocols can not be cancelled or be switched away from.
-                    if (protocol == ManipulationProtocol.Harvest || protocol == ManipulationProtocol.Replacement)
+                    if (protocol == SMNM_ManipulationProtocol.Harvest || protocol == SMNM_ManipulationProtocol.Replacement)
                     {
-                        opts.Add(new FloatMenuOption("ATNM_CanNotCancelProtocol".Translate(), null));
-                        Find.WindowStack.Add(new FloatMenu(opts, "ATNM_SetProtocol".Translate()));
+                        opts.Add(new FloatMenuOption("SMNM_CanNotCancelProtocol".Translate(), null));
+                        Find.WindowStack.Add(new FloatMenu(opts, "SMNM_SetProtocol".Translate()));
                         return;
                     }
 
                     // Always allow and put None at the top. There are no extra conditions.
-                    opts.Add(new FloatMenuOption("ATNM_NoneProtocol".Translate(), delegate
+                    opts.Add(new FloatMenuOption("SMNM_NoneProtocol".Translate(), delegate
                     {
-                        Protocol = ManipulationProtocol.None;
+                        Protocol = SMNM_ManipulationProtocol.None;
                     })
                     {
-                        tooltip = new TipSignal("ATNM_NoneProtocolTooltip".Translate(), 0.1f)
+                        tooltip = new TipSignal("SMNM_NoneProtocolTooltip".Translate(), 0.1f)
                     });
 
                     // Allow Rampage protocol. There are no extra conditions.
-                    opts.Add(new FloatMenuOption("ATNM_RampageProtocol".Translate(), delegate
+                    opts.Add(new FloatMenuOption("SMNM_RampageProtocol".Translate(), delegate
                     {
-                        Protocol = ManipulationProtocol.Rampage;
-                        protocolHediff = HediffMaker.MakeHediff(ATNM_HediffDefOf.ATNM_RampageProtocol, Pawn);
+                        Protocol = SMNM_ManipulationProtocol.Rampage;
+                        protocolHediff = HediffMaker.MakeHediff(SMNM_HediffDefOf.SMNM_RampageProtocol, Pawn);
                         Pawn.health.AddHediff(protocolHediff);
                         lastCommandTick = Find.TickManager.TicksGame;
                     })
                     {
-                        tooltip = new TipSignal("ATNM_RampageProtocolTooltip".Translate(), 0.1f)
+                        tooltip = new TipSignal("SMNM_RampageProtocolTooltip".Translate(), 0.1f)
                     });
 
                     // Allow Stasis protocol. There are no extra conditions.
-                    opts.Add(new FloatMenuOption("ATNM_StasisProtocol".Translate(), delegate
+                    opts.Add(new FloatMenuOption("SMNM_StasisProtocol".Translate(), delegate
                     {
-                        Protocol = ManipulationProtocol.Stasis;
-                        protocolHediff = HediffMaker.MakeHediff(ATNM_HediffDefOf.ATNM_StasisProtocol, Pawn);
+                        Protocol = SMNM_ManipulationProtocol.Stasis;
+                        protocolHediff = HediffMaker.MakeHediff(SMNM_HediffDefOf.SMNM_StasisProtocol, Pawn);
                         Pawn.health.AddHediff(protocolHediff);
                         lastCommandTick = Find.TickManager.TicksGame;
                     })
                     {
-                        tooltip = new TipSignal("ATNM_StasisProtocolTooltip".Translate(), 0.1f)
+                        tooltip = new TipSignal("SMNM_StasisProtocolTooltip".Translate(), 0.1f)
                     });
 
                     // Allow Terror protocol. Only available for slave pawns (which requires Ideology DLC).
                     if (Pawn.IsSlaveOfColony)
                     {
-                        opts.Add(new FloatMenuOption("ATNM_TerrorProtocol".Translate(), delegate
+                        opts.Add(new FloatMenuOption("SMNM_TerrorProtocol".Translate(), delegate
                         {
-                            Protocol = ManipulationProtocol.Terror;
-                            protocolHediff = HediffMaker.MakeHediff(ATNM_HediffDefOf.ATNM_TerrorProtocol, Pawn);
+                            Protocol = SMNM_ManipulationProtocol.Terror;
+                            protocolHediff = HediffMaker.MakeHediff(SMNM_HediffDefOf.SMNM_TerrorProtocol, Pawn);
                             Pawn.health.AddHediff(protocolHediff);
                             lastCommandTick = Find.TickManager.TicksGame;
                         })
                         {
-                            tooltip = new TipSignal("ATNM_TerrorProtocolTooltip".Translate(), 0.1f)
+                            tooltip = new TipSignal("SMNM_TerrorProtocolTooltip".Translate(), 0.1f)
                         });
                     }
                     else
                     {
-                        opts.Add(new FloatMenuOption("ATNM_TerrorProtocolRequiresSlave".Translate(), null));
+                        opts.Add(new FloatMenuOption("SMNM_TerrorProtocolRequiresSlave".Translate(), null));
                     }
 
                     // Allow Numbness protocol. There are no extra conditions.
-                    opts.Add(new FloatMenuOption("ATNM_NumbnessProtocol".Translate(), delegate
+                    opts.Add(new FloatMenuOption("SMNM_NumbnessProtocol".Translate(), delegate
                     {
-                        Protocol = ManipulationProtocol.Numbness;
-                        protocolHediff = HediffMaker.MakeHediff(ATNM_HediffDefOf.ATNM_NumbnessProtocol, Pawn);
+                        Protocol = SMNM_ManipulationProtocol.Numbness;
+                        protocolHediff = HediffMaker.MakeHediff(SMNM_HediffDefOf.SMNM_NumbnessProtocol, Pawn);
                         Pawn.health.AddHediff(protocolHediff);
                         lastCommandTick = Find.TickManager.TicksGame;
                     })
                     {
-                        tooltip = new TipSignal("ATNM_NumbnessProtocolTooltip".Translate(), 0.1f)
+                        tooltip = new TipSignal("SMNM_NumbnessProtocolTooltip".Translate(), 0.1f)
                     });
 
                     // Allow Harvest protocol. There are no extra conditions.
-                    opts.Add(new FloatMenuOption("ATNM_HarvestProtocol".Translate(), delegate
+                    opts.Add(new FloatMenuOption("SMNM_HarvestProtocol".Translate(), delegate
                     {
-                        Find.WindowStack.Add(new Dialog_MessageBox("ATR_AbsorbExperienceConfirm".Translate(Pawn.LabelShortCap) + "\n" + "ATR_SkyMindDisconnectionRisk".Translate(), "Confirm".Translate(), buttonBText: "Cancel".Translate(), title: "ATR_AbsorbExperience".Translate(), buttonAAction: delegate
+                        Find.WindowStack.Add(new Dialog_MessageBox("SMNM_AbsorbExperienceConfirm".Translate(Pawn.LabelShortCap) + "\n" + "SMNM_SkyMindDisconnectionRisk".Translate(), "Confirm".Translate(), buttonBText: "Cancel".Translate(), title: "SMNM_AbsorbExperience".Translate(), buttonAAction: delegate
                         {
-                            Protocol = ManipulationProtocol.Harvest;
+                            Protocol = SMNM_ManipulationProtocol.Harvest;
                             Pawn.GetComp<CompSkyMindLink>().InitiateConnection(3);
                             lastCommandTick = Find.TickManager.TicksGame;
                         }));
                     })
                     {
-                        tooltip = new TipSignal("ATNM_HarvestProtocolTooltip".Translate(), 0.1f)
+                        tooltip = new TipSignal("SMNM_HarvestProtocolTooltip".Translate(), 0.1f)
                     });
 
                     // Allow Cultivation protocol. Can only be used on non-prisoners.
                     if (Pawn.IsFreeColonist)
                     {
-                        opts.Add(new FloatMenuOption("ATNM_CultivationProtocol".Translate(), delegate
+                        opts.Add(new FloatMenuOption("SMNM_CultivationProtocol".Translate(), delegate
                         {
-                            Protocol = ManipulationProtocol.Cultivation;
-                            protocolHediff = HediffMaker.MakeHediff(ATNM_HediffDefOf.ATNM_CultivationProtocol, Pawn);
+                            Protocol = SMNM_ManipulationProtocol.Cultivation;
+                            protocolHediff = HediffMaker.MakeHediff(SMNM_HediffDefOf.SMNM_CultivationProtocol, Pawn);
                             Pawn.health.AddHediff(protocolHediff);
                             lastCommandTick = Find.TickManager.TicksGame;
                         })
                         {
-                            tooltip = new TipSignal("ATNM_CultivationProtocolTooltip".Translate(), 0.1f)
+                            tooltip = new TipSignal("SMNM_CultivationProtocolTooltip".Translate(), 0.1f)
                         });
                     }
                     else
                     {
-                        opts.Add(new FloatMenuOption("ATNM_CultivationProtocolRequiresNonPrisoner".Translate(), null));
+                        opts.Add(new FloatMenuOption("SMNM_CultivationProtocolRequiresNonPrisoner".Translate(), null));
                     }
 
                     // Allow Conversion protocol. Only available for pawns that do not have the "Unwavering" condition.
                     if (Pawn.Faction == Faction.OfPlayer || Pawn.guest.Recruitable)
                     {
-                        opts.Add(new FloatMenuOption("ATNM_ConversionProtocol".Translate(), delegate
+                        opts.Add(new FloatMenuOption("SMNM_ConversionProtocol".Translate(), delegate
                         {
-                            Protocol = ManipulationProtocol.Conversion;
-                            protocolHediff = HediffMaker.MakeHediff(ATNM_HediffDefOf.ATNM_ConversionProtocol, Pawn);
+                            Protocol = SMNM_ManipulationProtocol.Conversion;
+                            protocolHediff = HediffMaker.MakeHediff(SMNM_HediffDefOf.SMNM_ConversionProtocol, Pawn);
                             Pawn.health.AddHediff(protocolHediff);
                             lastCommandTick = Find.TickManager.TicksGame;
                         })
                         {
-                            tooltip = new TipSignal("ATNM_ConversionProtocolTooltip".Translate(), 0.1f)
+                            tooltip = new TipSignal("SMNM_ConversionProtocolTooltip".Translate(), 0.1f)
                         });
                     }
                     else
                     {
-                        opts.Add(new FloatMenuOption("ATNM_ConversionProtocolUnusableOnUnwavering".Translate(), null));
+                        opts.Add(new FloatMenuOption("SMNM_ConversionProtocolUnusableOnUnwavering".Translate(), null));
                     }
 
                     // Allow Replacement protocol. There are no extra conditions. This protocol destroys the chip upon activation, and has a warning option attached.
-                    opts.Add(new FloatMenuOption("ATNM_ReplacementProtocol".Translate(), delegate
+                    opts.Add(new FloatMenuOption("SMNM_ReplacementProtocol".Translate(), delegate
                     {
-                        Find.WindowStack.Add(new Dialog_MessageBox("ATNM_ReplacementProtocolConfirmDesc".Translate(Pawn.LabelShortCap), "Confirm".Translate(), buttonBText: "Cancel".Translate(), title: "ATNM_ReplacementProtocol".Translate(), buttonAAction: delegate
+                        Find.WindowStack.Add(new Dialog_MessageBox("SMNM_ReplacementProtocolConfirmDesc".Translate(Pawn.LabelShortCap), "Confirm".Translate(), buttonBText: "Cancel".Translate(), title: "SMNM_ReplacementProtocol".Translate(), buttonAAction: delegate
                         {
-                            Protocol = ManipulationProtocol.Replacement;
+                            Protocol = SMNM_ManipulationProtocol.Replacement;
                             // Don't give the replacement hediff to protocolHediff or it'll be removed when this comp deletes the parent hediff.
-                            Pawn.health.AddHediff(HediffMaker.MakeHediff(ATNM_HediffDefOf.ATNM_ReplacementProtocol, Pawn));
+                            Pawn.health.AddHediff(HediffMaker.MakeHediff(SMNM_HediffDefOf.SMNM_ReplacementProtocol, Pawn));
                             Pawn.health.RemoveHediff(parent);
                         }));
                     })
                     {
-                        tooltip = new TipSignal("ATNM_ReplacementProtocolTooltip".Translate(), 0.1f)
+                        tooltip = new TipSignal("SMNM_ReplacementProtocolTooltip".Translate(), 0.1f)
                     });
 
-                    Find.WindowStack.Add(new FloatMenu(opts, "ATNM_SetProtocol".Translate()));
+                    Find.WindowStack.Add(new FloatMenu(opts, "SMNM_SetProtocol".Translate()));
                 }
             };
             // New protocols can only be issued once every half hour.
             if (Find.TickManager.TicksGame - 1250 < lastCommandTick)
             {
                 gizmo.disabled = true;
-                gizmo.disabledReason = "ATNM_protocolChangedTooRecently".Translate();
+                gizmo.disabledReason = "SMNM_protocolChangedTooRecently".Translate();
             }
             yield return gizmo;
         }
 
         Hediff protocolHediff;
-        ManipulationProtocol protocol;
+        SMNM_ManipulationProtocol protocol;
         int lastCommandTick = -1250;
     }
 }

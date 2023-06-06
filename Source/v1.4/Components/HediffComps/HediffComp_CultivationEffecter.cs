@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace ATReforged
+namespace SkyMind
 {
     // This hediff comp produces skill points idly.
     public class HediffComp_CultivationEffecter : HediffComp
@@ -30,7 +30,7 @@ namespace ATReforged
                 return;
             }
 
-            Utils.gameComp.ChangeServerPoints(1, ServerType.SkillServer);
+            SMN_Utils.gameComp.ChangeServerPoints(1, SMN_ServerType.SkillServer);
         }
 
         CompSkyMind connection;

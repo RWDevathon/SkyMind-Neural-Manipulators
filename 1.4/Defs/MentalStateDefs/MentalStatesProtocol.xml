@@ -2,8 +2,8 @@
 <Defs>
 
     <MentalStateDef ParentName="BaseMentalState">
-        <defName>ATNM_MentalState_Rampage</defName>
-        <stateClass>ATReforged.MentalState_Rampage</stateClass>
+        <defName>SMNM_MentalState_Rampage</defName>
+        <stateClass>SkyMind.MentalState_Rampage</stateClass>
         <label>remotely enraged</label>
         <category>Aggro</category>
         <nameColor>(0.7,0.5,0.5)</nameColor>

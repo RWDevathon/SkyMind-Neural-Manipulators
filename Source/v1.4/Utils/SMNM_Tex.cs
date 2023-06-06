@@ -1,12 +1,12 @@
 ﻿using Verse;
 using UnityEngine;
 
-namespace ATReforged
+namespace SkyMind
 {
     [StaticConstructorOnStartup]
-    static class Tex
+    static class SMNM_Tex
     {
-        static Tex()
+        static SMNM_Tex()
         {
         }
 

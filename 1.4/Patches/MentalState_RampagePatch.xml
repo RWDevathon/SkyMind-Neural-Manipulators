@@ -6,11 +6,11 @@
 		<xpath>Defs/ThinkTreeDef[defName="MentalStateCritical"]/thinkRoot/subNodes</xpath>
 		<value>
             <li Class="ThinkNode_ConditionalMentalStateClass">
-                <stateClass>ATReforged.MentalState_Rampage</stateClass>
+                <stateClass>SkyMind.MentalState_Rampage</stateClass>
                 <subNodes>
                     <li Class="ThinkNode_Priority">
                         <subNodes>
-                            <li Class="ATReforged.JobGiver_AIExterminatorFight" />
+                            <li Class="SkyMind.JobGiver_AIRampageHunt" />
                             <li Class="JobGiver_WanderAnywhere">
                                 <maxDanger>Deadly</maxDanger>
                             </li>

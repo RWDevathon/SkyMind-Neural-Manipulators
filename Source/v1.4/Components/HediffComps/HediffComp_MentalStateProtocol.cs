@@ -1,7 +1,7 @@
 ﻿using Verse;
 using RimWorld;
 
-namespace ATReforged
+namespace SkyMind
 {
     // This hediff comp takes in a mental state from the comp properties and applies it to the pawn when made and removes it when the hediff comp is removed.
     public class HediffComp_MentalStateProtocol : HediffComp
@@ -15,7 +15,7 @@ namespace ATReforged
 
             if (!Pawn.mindState.mentalStateHandler.TryStartMentalState(Props.mentalState, forceWake: true, transitionSilently: true))
             {
-                Log.Warning($"[ATR] {Pawn} failed to enter the {Props.mentalState.label} mental state as expected!");
+                Log.Warning($"[SMNM] {Pawn} failed to enter the {Props.mentalState.label} mental state as expected!");
             }
         }
 

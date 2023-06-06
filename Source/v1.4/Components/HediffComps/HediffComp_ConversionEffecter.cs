@@ -2,7 +2,7 @@
 using UnityEngine;
 using Verse;
 
-namespace ATReforged
+namespace SkyMind
 {
     // This hediff comp reduces a pawn's resistance, will, and certainty (in that order) constantly. It does nothing if all three are at zero.
     public class HediffComp_ConversionEffecter : HediffComp
@@ -31,13 +31,13 @@ namespace ATReforged
         // Only check every 6000 ticks (10 times a day) and only reduce if the pawn is connected to an active SkyMind Core with available hacking points.
         public override void CompPostTick(ref float severityAdjustment)
         {
-            if (!Pawn.IsHashIntervalTick(6000) || !connection.connected || Utils.gameComp.GetSkyMindCloudCapacity() == 0)
+            if (!Pawn.IsHashIntervalTick(6000) || !connection.connected || SMN_Utils.gameComp.GetSkyMindCloudCapacity() == 0)
             {
                 return;
             }
 
             float conversionCost = 50 / ((!Find.IdeoManager.classicMode && Pawn.Ideo != null) ? Pawn.GetStatValueForPawn(StatDefOf.CertaintyLossFactor, Pawn) : 1);
-            if (Utils.gameComp.GetPoints(ServerType.HackingServer) < conversionCost)
+            if (SMN_Utils.gameComp.GetPoints(SMN_ServerType.HackingServer) < conversionCost)
             {
                 return;
             }
@@ -46,19 +46,19 @@ namespace ATReforged
             if (guestTracker.resistance > 0)
             {
                 guestTracker.resistance = Mathf.Clamp(guestTracker.resistance - 1, 0, 999);
-                Utils.gameComp.ChangeServerPoints(-conversionCost, ServerType.HackingServer);
+                SMN_Utils.gameComp.ChangeServerPoints(-conversionCost, SMN_ServerType.HackingServer);
             }
             // 50 hacking points is worth 1 will.
             else if (guestTracker.will > 0)
             {
                 guestTracker.will = Mathf.Clamp(guestTracker.will - 1, 0, 999);
-                Utils.gameComp.ChangeServerPoints(-conversionCost, ServerType.HackingServer);
+                SMN_Utils.gameComp.ChangeServerPoints(-conversionCost, SMN_ServerType.HackingServer);
             }
             // 50 hacking points is worth 2% certainty.
             else if (!Find.IdeoManager.classicMode && Pawn.Ideo != null && ideoTracker.Certainty > 0)
             {
                 ideoTracker.OffsetCertainty(-0.02f);
-                Utils.gameComp.ChangeServerPoints(-conversionCost, ServerType.HackingServer);
+                SMN_Utils.gameComp.ChangeServerPoints(-conversionCost, SMN_ServerType.HackingServer);
             }
         }
 

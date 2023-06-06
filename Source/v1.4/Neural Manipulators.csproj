@@ -7,8 +7,8 @@
     <ProjectGuid>{A4387268-4E97-4CB5-8E19-BB7A2344454B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ATReforged</RootNamespace>
-    <AssemblyName>Android Tiers Neural Manipulators</AssemblyName>
+    <RootNamespace>SkyMind</RootNamespace>
+    <AssemblyName>SkyMind Neural Manipulators</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -36,10 +36,6 @@
       <HintPath>..\..\..\..\..\..\workshop\content\294100\839005762\1.4\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Android Tiers Reforged">
-      <HintPath>..\..\..\Dev_Android Tiers\1.4\Assemblies\Android Tiers Reforged.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -59,6 +55,10 @@
     </Reference>
     <Reference Include="Mono.Security">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Mono.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SkyMind Network">
+      <HintPath>..\..\..\Dev_SkyMind Network\1.4\Assemblies\SkyMind Network.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -177,7 +177,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\HediffCompProperties\HediffCompProperties_SuppressionEffecter.cs" />
     <Compile Include="Components\HediffCompProperties\HediffCompProperties_PotentialSideEffectOnApplied.cs" />
     <Compile Include="Components\HediffCompProperties\HediffCompProperties_MentalStateProtocol.cs" />
     <Compile Include="Components\HediffComps\HediffComp_CultivationEffecter.cs" />
@@ -187,16 +186,17 @@
     <Compile Include="Components\HediffComps\HediffComp_SuppressionEffecter.cs" />
     <Compile Include="Components\HediffComps\HediffComp_PotentialSideEffectOnApplied.cs" />
     <Compile Include="Components\HediffComps\HediffComp_NeuralManipulator.cs" />
-    <Compile Include="DefsOf\ATNM_ThoughtDefOf.cs" />
-    <Compile Include="DefsOf\ATNM_HediffDefOf.cs" />
-    <Compile Include="DefsOf\ATNM_MentalStateDefOf.cs" />
+    <Compile Include="DefsOf\SMNM_ThoughtDefOf.cs" />
+    <Compile Include="DefsOf\SMNM_HediffDefOf.cs" />
+    <Compile Include="DefsOf\SMNM_MentalStateDefOf.cs" />
     <Compile Include="Harmony\Pawn_Patch.cs" />
+    <Compile Include="JobGivers\JobGiver_AIRampageHunt.cs" />
     <Compile Include="MentalStates\MentalState_Rampage.cs" />
-    <Compile Include="ATReforged_NeuralManipulators.cs" />
+    <Compile Include="SkyMind_NeuralManipulators.cs" />
     <Compile Include="Harmony\SlaveRebellionUtility_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\Enums.cs" />
-    <Compile Include="Utils\Tex.cs" />
+    <Compile Include="Utils\SMNM_Enums.cs" />
+    <Compile Include="Utils\SMNM_Tex.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

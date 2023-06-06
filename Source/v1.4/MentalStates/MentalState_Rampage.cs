@@ -2,14 +2,14 @@
 using Verse;
 using Verse.AI;
 
-namespace ATReforged
+namespace SkyMind
 {
     // Attack anything that isn't also rampaging.
     public class MentalState_Rampage : MentalState
     { 
         public override bool ForceHostileTo(Thing t)
         {
-            if (t is Pawn pawn && pawn.MentalStateDef == ATNM_MentalStateDefOf.ATNM_MentalState_Rampage)
+            if (t is Pawn pawn && pawn.MentalStateDef == SMNM_MentalStateDefOf.SMNM_MentalState_Rampage)
             {
                 return false;
             }

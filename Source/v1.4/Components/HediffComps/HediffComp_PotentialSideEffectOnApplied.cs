@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace ATReforged
+namespace SkyMind
 {
     // This hediff comp takes in a hediff def and a chance to occur from comp properties, and tries to add that hediff to the pawn when created.
     // If properties indicates the original should be removed when the effect occurs, this comp will delete it.

@@ -2,7 +2,7 @@
 <Defs>
 
     <ThoughtDef>
-        <defName>ATNM_PostTerrorStress</defName>
+        <defName>SMNM_PostTerrorStress</defName>
         <durationDays>10</durationDays>
         <stackLimit>5</stackLimit>
         <stackedEffectMultiplier>1.1</stackedEffectMultiplier>

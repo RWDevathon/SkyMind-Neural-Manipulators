@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<ATNM_SetProtocol>Set Protocol</ATNM_SetProtocol>
-	<ATNM_SetProtocolDesc>Current protocol: {0}. Click to assign new protocol.</ATNM_SetProtocolDesc>
+	<SMNM_SetProtocol>Set Protocol</SMNM_SetProtocol>
+	<SMNM_SetProtocolDesc>Current protocol: {0}. Click to assign new protocol.</SMNM_SetProtocolDesc>
 
-    <ATNM_protocolChangedTooRecently>Protocols may only be changed once every half hour.</ATNM_protocolChangedTooRecently>
+    <SMNM_protocolChangedTooRecently>Protocols may only be changed once every half hour.</SMNM_protocolChangedTooRecently>
 
 </LanguageData>

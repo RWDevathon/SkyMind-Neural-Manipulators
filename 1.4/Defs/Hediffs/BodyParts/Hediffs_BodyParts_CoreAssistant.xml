@@ -3,8 +3,8 @@
 
     <!-- SkyMind Digital Commander -->
 
-  	<HediffDef ParentName="ATR_AddedBodyPartCoreAssistantBase">
-    	<defName>ATNM_DigitalCommander</defName>
+  	<HediffDef MayRequire="Killathon.MechHumanlikes.AndroidTiersCore" ParentName="ATR_AddedBodyPartCoreAssistantBase">
+    	<defName>SMNM_DigitalCommander</defName>
     	<label>Digital commander</label>
         <description>This installed chip is extremely sophisticated and acts as a neural manipulator for androids, with the necessary override commands and hardcoded control links to overpower the core consciousness. Through this chip, a connected SkyMind Core can overrule autonomous decision-making and exert much greater control.\n\nWithout a SkyMind connection and Core, it does nothing. Since drones can not use the SkyMind network, it is useless to them.</description>
         <stages>
@@ -14,14 +14,14 @@
 		</stages>
         <comps>
             <li>
-                <compClass>ATReforged.HediffComp_NeuralManipulator</compClass>
+                <compClass>SkyMind.HediffComp_NeuralManipulator</compClass>
             </li>
         </comps>
-    	<spawnThingOnRemoved>ATNM_DigitalCommander</spawnThingOnRemoved>
+    	<spawnThingOnRemoved>SMNM_DigitalCommander</spawnThingOnRemoved>
   	</HediffDef>
 
-  	<ThingDef ParentName="ATR_BodyPartCoreAssistantBase">
-    	<defName>ATNM_DigitalCommander</defName>
+  	<ThingDef MayRequire="Killathon.MechHumanlikes.AndroidTiersCore" ParentName="ATR_BodyPartCoreAssistantBase">
+    	<defName>SMNM_DigitalCommander</defName>
     	<label>Digital commander</label>
 	  	<description>This sub-core chip is extremely sophisticated and acts as a neural manipulator for androids, with the necessary override commands and hardcoded control links to overpower the core consciousness. Through this chip, a connected SkyMind Core can overrule autonomous decision-making and exert much greater control.\n\nWithout a SkyMind connection and Core, it does nothing.</description>
         <techLevel>Ultra</techLevel>
@@ -33,7 +33,7 @@
             <MarketValue>700</MarketValue>
         </statBases>
         <recipeMaker>
-			<researchPrerequisite>ATR_SkyMindCore</researchPrerequisite>
+			<researchPrerequisite>SMN_SkyMindCore</researchPrerequisite>
         </recipeMaker>
 		<costList>
             <Plasteel>20</Plasteel>
@@ -41,17 +41,17 @@
 		</costList>
   	</ThingDef>
 
-  	<RecipeDef ParentName="ATR_SurgeryCoreAssistant">
-		<defName>ATR_Install_DigitalCommander</defName>
+  	<RecipeDef MayRequire="Killathon.MechHumanlikes.AndroidTiersCore" ParentName="ATR_SurgeryCoreAssistant">
+		<defName>SMNM_Install_DigitalCommander</defName>
 		<label>Install digital commander</label>
 		<description>Installs a digital commander into the sub-core assistant slot of a unit.</description>
-        <researchPrerequisite>ATR_SkyMindCore</researchPrerequisite>
+        <researchPrerequisite>SMN_SkyMindCore</researchPrerequisite>
         <jobString>Installing digital commander.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>ATNM_DigitalCommander</li>
+						<li>SMNM_DigitalCommander</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -59,10 +59,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>ATNM_DigitalCommander</li>
+				<li>SMNM_DigitalCommander</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<addsHediff>ATNM_DigitalCommander</addsHediff>
+		<addsHediff>SMNM_DigitalCommander</addsHediff>
 	</RecipeDef>
 
 </Defs>

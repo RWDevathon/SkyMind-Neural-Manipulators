@@ -1,7 +1,7 @@
 ﻿using Verse;
 using RimWorld;
 
-namespace ATReforged
+namespace SkyMind
 {
     // This hediff comp will generate and apply a new pawn to this body when it is removed.
     public class HediffComp_ReplacementEffecter : HediffComp
@@ -11,7 +11,7 @@ namespace ATReforged
             base.CompPostPostRemoved();
 
             Pawn newPawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(Pawn.kindDef, Pawn.Faction, PawnGenerationContext.NonPlayer, forceGenerateNewPawn: true, canGeneratePawnRelations: false, fixedBiologicalAge: Pawn.ageTracker.AgeBiologicalYearsFloat));
-            Utils.Duplicate(newPawn, Pawn, true, false);
+            SMN_Utils.Duplicate(newPawn, Pawn, true, false);
         }
     }
 }

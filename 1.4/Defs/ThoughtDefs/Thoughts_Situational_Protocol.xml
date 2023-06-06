@@ -2,9 +2,9 @@
 <Defs>
 
     <ThoughtDef>
-        <defName>ATNM_NeuralManipulator</defName>
+        <defName>SMNM_NeuralManipulator</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>ATNM_NeuralManipulator</hediff>
+        <hediff>SMNM_NeuralManipulator</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
@@ -17,9 +17,9 @@
     </ThoughtDef>
 
     <ThoughtDef>
-        <defName>ATNM_DigitalCommander</defName>
+        <defName>SMNM_DigitalCommander</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>ATNM_DigitalCommander</hediff>
+        <hediff>SMNM_DigitalCommander</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
@@ -32,9 +32,9 @@
     </ThoughtDef>
 
     <ThoughtDef>
-        <defName>ATNM_TerrorProtocol</defName>
+        <defName>SMNM_TerrorProtocol</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>ATNM_TerrorProtocol</hediff>
+        <hediff>SMNM_TerrorProtocol</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
@@ -47,9 +47,9 @@
     </ThoughtDef>
 
     <ThoughtDef>
-        <defName>ATNM_ConversionProtocol</defName>
+        <defName>SMNM_ConversionProtocol</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>ATNM_ConversionProtocol</hediff>
+        <hediff>SMNM_ConversionProtocol</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
@@ -62,9 +62,9 @@
     </ThoughtDef>
 
     <ThoughtDef>
-        <defName>ATNM_NumbnessProtocol</defName>
+        <defName>SMNM_NumbnessProtocol</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>ATNM_NumbnessProtocol</hediff>
+        <hediff>SMNM_NumbnessProtocol</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>

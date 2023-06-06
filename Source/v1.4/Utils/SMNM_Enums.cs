@@ -1,6 +1,6 @@
-﻿namespace ATReforged
+﻿namespace SkyMind
 {
-    public enum ManipulationProtocol 
+    public enum SMNM_ManipulationProtocol 
     { 
         None,
         Rampage,
