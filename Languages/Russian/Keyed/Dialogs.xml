@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<SMNM_ReplacementProtocolConfirmDesc>Протокол замены отключит сознание и соединение SkyMind, так как манипулятор начнет полную очистку сознания для подготовки к установке нового, случайного сознания. Во время этого процесса манипулятор сгорит. Этот процесс не может быть отменен или обращен.</SMNM_ReplacementProtocolConfirmDesc>
+  <SMNM_ReplacementProtocolConfirmDesc>Протокол замены отключит сознание и соединение SkyMind, так как манипулятор начнёт полную очистку сознания для подготовки к установке нового, случайного сознания. Во время этого процесса манипулятор сгорит. \n\nЭтот процесс не может быть остановлен или обращён.</SMNM_ReplacementProtocolConfirmDesc>
 
 </LanguageData>

@@ -1,32 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<SMNM_RampageProtocol.label>Нейронное буйство</SMNM_RampageProtocol.label>
-	<SMNM_RampageProtocol.labelNoun>вызывает буйство</SMNM_RampageProtocol.labelNoun>
-	<SMNM_RampageProtocol.description>Нейронный манипулятор SkyMind захватил сознание и стимулирует центры боевой обработки информации пешки, полностью подавляя все остальные неосновные нейронные процессы. Движимая жаждой крови, пешка будет сражаться с безрассудством и энергией до самой смерти или до прекращения действия протокола - в зависимости от того, что наступит раньше. SkyMind Core может предотвратить нападение буйных субъектов друг на друга, но не предотвращает дружественный огонь.</SMNM_RampageProtocol.description>
+  <SMNM_RampageProtocol.label>Нейронное буйство</SMNM_RampageProtocol.label>
+  <SMNM_RampageProtocol.description>Нейронный манипулятор стимулирует центры обработки боевой информации пешки, полностью подавляя все остальные, неосновные, нейронные процессы. Движимая жаждой крови, пешка будет безрассудно сражаться до самой смерти или до прекращения действия протокола — в зависимости от того, что наступит раньше. Ядро SkyMind может предотвратить нападение буйных подопытных друг на друга, но не предотвращает дружественный огонь.</SMNM_RampageProtocol.description>
+  <SMNM_RampageProtocol.labelNoun>вызывает буйство</SMNM_RampageProtocol.labelNoun>
 
-	<SMNM_StasisProtocol.label>Протокол стазиса</SMNM_StasisProtocol.label>
-	<SMNM_StasisProtocol.labelNoun>вызывает стазис</SMNM_StasisProtocol.labelNoun>
-	<SMNM_StasisProtocol.description>Нейронный манипулятор SkyMind подавляет нейронную активность только до необходимой - искусственное спящее состояние. Ядро SkyMind может использовать перераспределение неиспользуемой нейронной активности для повышения способности бессознательного тела к регенерации.</SMNM_StasisProtocol.description>
+  <SMNM_StasisProtocol.label>Протокол стазиса</SMNM_StasisProtocol.label>
+  <SMNM_StasisProtocol.description>Нейронный манипулятор подавляет нейронную активность до необходимой — искусственное спящее состояние. Ядро SkyMind может перераспределить неиспользуемую нейронную активности для повышения способности туловища к регенерации.</SMNM_StasisProtocol.description>
+  <SMNM_StasisProtocol.labelNoun>вызывает стазис</SMNM_StasisProtocol.labelNoun>
 
-	<SMNM_TerrorProtocol.label>Протокол террора</SMNM_TerrorProtocol.label>
-	<SMNM_TerrorProtocol.labelNoun>вызывает кошмар наяву</SMNM_TerrorProtocol.labelNoun>
-	<SMNM_TerrorProtocol.description>Нейронный манипулятор SkyMind посылает подавляющее количество и масштабы противоречивых, нервирующих сигналов, проходящих через разум раба. Сигналы беспорядочны и случайны, что создает у субъекта почти кошмарный сон в реальном мире, поскольку все его чувства перегружены и терроризированы. Этот эффект, как известно, вызывает быстрые психические срывы и иногда сердечные приступы, но чрезвычайно эффективен для подавления раба.</SMNM_TerrorProtocol.description>
+  <SMNM_TerrorProtocol.label>Протокол террора</SMNM_TerrorProtocol.label>
+  <SMNM_TerrorProtocol.description>Нейронный манипулятор посылает подавляющее количество противоречивых, нервирующих сигналов, проходящих через разум раба. Сигналы беспорядочны и случайны, что создаёт у подопытного кошмарный сон в реальном мире, поскольку все его чувства перегружены. Этот эффект, вызывает психические срывы и иногда сердечные приступы, но эффективен для подавления раба.</SMNM_TerrorProtocol.description>
+  <SMNM_TerrorProtocol.labelNoun>вызывает кошмары</SMNM_TerrorProtocol.labelNoun>
 
-	<SMNM_NumbnessProtocol.label>Протокол онемения</SMNM_NumbnessProtocol.label>
-	<SMNM_NumbnessProtocol.labelNoun>вызывает десенсибилизацию</SMNM_NumbnessProtocol.labelNoun>
-	<SMNM_NumbnessProtocol.description>Нейронный манипулятор SkyMind подавляет большинство неосновных видов нейронной активности. Снижение сознания уменьшает способность испытывать беспокойство, даже если оно явно не эйфорическое. Этот эффект известен тем, что заставляет испытуемых казаться апатичными по отношению к миру, а также вялыми и десенсибилизированными.</SMNM_NumbnessProtocol.description>
+  <SMNM_NumbnessProtocol.label>Протокол онемения</SMNM_NumbnessProtocol.label>
+  <SMNM_NumbnessProtocol.description>Нейронный манипулятор подавляет большинство неосновных видов нейронной активности. Снижение сознания уменьшает способность испытывать беспокойство, даже если оно не эйфорическое. Этот эффект известен тем, что заставляет испытуемых казаться апатичными по отношению к миру и вялыми.</SMNM_NumbnessProtocol.description>
+  <SMNM_NumbnessProtocol.labelNoun>вызывает онемение</SMNM_NumbnessProtocol.labelNoun>
 
-	<SMNM_CultivationProtocol.label>Протокол культивирования</SMNM_CultivationProtocol.label>
-	<SMNM_CultivationProtocol.labelNoun>вызывает утечку мозгов</SMNM_CultivationProtocol.labelNoun>
-	<SMNM_CultivationProtocol.description>Нейронный манипулятор SkyMind перехватывает входящую нейронную информацию и передает ее в сеть для изучения навыков. Хотя это мешает субъекту изучать навыки, это не влияет на принятие решений или другие нейронные функции.</SMNM_CultivationProtocol.description>
+  <SMNM_CultivationProtocol.label>Протокол культивации</SMNM_CultivationProtocol.label>
+  <SMNM_CultivationProtocol.description>Нейронный манипулятор перехватывает входящую информацию и передаёт её в сеть для изучения навыков. Хотя это мешает подопытному получать навыки, это не влияет на принятие решений или другие функции.</SMNM_CultivationProtocol.description>
+  <SMNM_CultivationProtocol.labelNoun>вызывает утечку мозгов</SMNM_CultivationProtocol.labelNoun>
 
-	<SMNM_ConversionProtocol.label>Протокол преобразования</SMNM_ConversionProtocol.label>
-	<SMNM_ConversionProtocol.labelNoun>вызывает кризисы доверия</SMNM_ConversionProtocol.labelNoun>
-	<SMNM_ConversionProtocol.description>Нейронный манипулятор SkyMind подает в сознание субъекта пропаганду и упрашивания, чтобы снизить его способность сопротивляться убеждению ценой очков взлома, а также причинить сильный дискомфорт. В то время как непоколебимые личности невосприимчивы, слабые умы будут терять устойчивость, волю и уверенность.</SMNM_ConversionProtocol.description>
+  <SMNM_ConversionProtocol.label>Протокол преобразования</SMNM_ConversionProtocol.label>
+  <SMNM_ConversionProtocol.description>Нейронный манипулятор подаёт в сознание субъекта пропаганду, чтобы снизить его способность сопротивляться убеждению, ценой очков взлома, а также причиняет сильный дискомфорт. Непоколебимые личности невосприимчивы к этому, но слабые умы будут терять сопротивление, волю и уверенность.</SMNM_ConversionProtocol.description>
+  <SMNM_ConversionProtocol.labelNoun>вызывает кризис доверия</SMNM_ConversionProtocol.labelNoun>
 
-	<SMNM_ReplacementProtocol.label>Протокол замены</SMNM_ReplacementProtocol.label>
-	<SMNM_ReplacementProtocol.labelNoun>вызывает смерть личности</SMNM_ReplacementProtocol.labelNoun>
-	<SMNM_ReplacementProtocol.description>Нейронный манипулятор SkyMind систематически очищает сознание этой пешки, готовясь к созданию новой, которую нужно вставить. Жертва находится в бессознательном состоянии и ничего не подозревает - другие будут в полном ужасе. По завершении сознание субъекта удаляется и заменяется новым, случайным.</SMNM_ReplacementProtocol.description>
+  <SMNM_ReplacementProtocol.label>Протокол замены</SMNM_ReplacementProtocol.label>
+  <SMNM_ReplacementProtocol.description>Нейронный манипулятор систематически очищает сознание этой пешки, готовясь к созданию нового, которое нужно вставить. Жертва находится в бессознательном состоянии и ничего не подозревает — другие будут в полном ужасе. По завершении сознание подопытного удаляется и заменяется новым, случайным.</SMNM_ReplacementProtocol.description>
+  <SMNM_ReplacementProtocol.labelNoun>вызывает смерть личности</SMNM_ReplacementProtocol.labelNoun>
+
 
 </LanguageData>

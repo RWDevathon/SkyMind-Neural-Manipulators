@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <SMNM_NeuralManipulator.stages.0.label>жертва манипулирования</SMNM_NeuralManipulator.stages.0.label>
+  <SMNM_NeuralManipulator.stages.0.label>жертва манипуляций</SMNM_NeuralManipulator.stages.0.label>
   <SMNM_NeuralManipulator.stages.0.description>В меня установлен нейронный манипулятор. В любой момент я могу потерять контроль над реальностью.</SMNM_NeuralManipulator.stages.0.description>
 
-  <SMNM_DigitalCommander.stages.0.label>жертва манипулирования</SMNM_DigitalCommander.stages.0.label>
+  <SMNM_DigitalCommander.stages.0.label>жертва манипуляций</SMNM_DigitalCommander.stages.0.label>
   <SMNM_DigitalCommander.stages.0.description>В меня установлен цифровой командир. В любой момент я могу потерять контроль над реальностью.</SMNM_DigitalCommander.stages.0.description>
 
-  <SMNM_TerrorProtocol.stages.0.label>терроризировал</SMNM_TerrorProtocol.stages.0.label>
-  <SMNM_TerrorProtocol.stages.0.description>Все это не имеет смысла! Я не могу выбраться из этого кошмара! Вытащите меня!</SMNM_TerrorProtocol.stages.0.description>
+  <SMNM_TerrorProtocol.stages.0.label>терроризирован</SMNM_TerrorProtocol.stages.0.label>
+  <SMNM_TerrorProtocol.stages.0.description>Всё это не имеет смысла! Я не могу выбраться из этого кошмара! ВЫТАЩИТЕ МЕНЯ!</SMNM_TerrorProtocol.stages.0.description>
 
   <SMNM_ConversionProtocol.stages.0.label>подозрительный</SMNM_ConversionProtocol.stages.0.label>
-  <SMNM_ConversionProtocol.stages.0.description>Эти голоса. Я не могу сказать, откуда они исходят, но они ставят под сомнение все. Я уже не знаю, во что верить.</SMNM_ConversionProtocol.stages.0.description>
+  <SMNM_ConversionProtocol.stages.0.description>Эти голоса. Я не могу сказать, откуда они исходят, но они всё ставят под сомнение. Я уже не знаю, во что верить.</SMNM_ConversionProtocol.stages.0.description>
 
   <SMNM_NumbnessProtocol.stages.0.label>онемевший</SMNM_NumbnessProtocol.stages.0.label>
-  <SMNM_NumbnessProtocol.stages.0.description>Я ничего не чувствую. Все заботы мира кажутся далекими.</SMNM_NumbnessProtocol.stages.0.description>
+  <SMNM_NumbnessProtocol.stages.0.description>Я ничего не чувствую. Все заботы мира кажутся далёкими.</SMNM_NumbnessProtocol.stages.0.description>
 
 
 </LanguageData>

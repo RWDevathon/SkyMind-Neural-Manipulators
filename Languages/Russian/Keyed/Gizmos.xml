@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<SMNM_SetProtocol>Задать протокол</SMNM_SetProtocol>
-	<SMNM_SetProtocolDesc>Текущий протокол: {0}. Нажмите, чтобы назначить новый протокол.</SMNM_SetProtocolDesc>
+  <SMNM_SetProtocol>Задать протокол</SMNM_SetProtocol>
+  <SMNM_SetProtocolDesc>Текущий протокол: {0}. Нажмите, чтобы сменить протокол.</SMNM_SetProtocolDesc>
 
-    <SMNM_protocolChangedTooRecently>Протоколы можно менять только раз в полчаса.</SMNM_protocolChangedTooRecently>
+  <SMNM_protocolChangedTooRecently>Протоколы можно менять только раз в полчаса.</SMNM_protocolChangedTooRecently>
 
 </LanguageData>

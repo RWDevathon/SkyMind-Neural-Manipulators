@@ -4,8 +4,8 @@
   <!-- SkyMind Digital Commander -->
 
   <SMNM_Install_DigitalCommander.label>Установить цифровой командир</SMNM_Install_DigitalCommander.label>
-  <SMNM_Install_DigitalCommander.description>Устанавливает цифрового командира в слот помощника субъядра юнита.</SMNM_Install_DigitalCommander.description>
-  <SMNM_Install_DigitalCommander.jobString>Установка цифрового коммандира.</SMNM_Install_DigitalCommander.jobString>
+  <SMNM_Install_DigitalCommander.description>Устанавливает цифрового командира юниту в слот помощника.</SMNM_Install_DigitalCommander.description>
+  <SMNM_Install_DigitalCommander.jobString>Установка цифрового командира.</SMNM_Install_DigitalCommander.jobString>
 
 
 </LanguageData>
