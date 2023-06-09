@@ -1,30 +1,30 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<!-- Illegal state messages -->
-    <SMNM_CanNotCancelProtocol>Невозможно отменить текущий протокол</SMNM_CanNotCancelProtocol>
-    <SMNM_TerrorProtocolRequiresSlave>Терроризировать можно только рабов</SMNM_TerrorProtocolRequiresSlave>
-    <SMNM_CultivationProtocolRequiresNonPrisoner>Только не заключенных можно культивировать</SMNM_CultivationProtocolRequiresNonPrisoner>
-    <SMNM_ConversionProtocolUnusableOnUnwavering>Нельзя использовать на непоколебимых пешках</SMNM_ConversionProtocolUnusableOnUnwavering>
+  <!-- Illegal state messages -->
+  <SMNM_CanNotCancelProtocol>Невозможно отменить текущий протокол</SMNM_CanNotCancelProtocol>
+  <SMNM_TerrorProtocolRequiresSlave>Терроризировать можно только рабов</SMNM_TerrorProtocolRequiresSlave>
+  <SMNM_CultivationProtocolRequiresNonPrisoner>Заключённых нельзя использовать для культивации</SMNM_CultivationProtocolRequiresNonPrisoner>
+  <SMNM_ConversionProtocolUnusableOnUnwavering>Нельзя использовать на непоколебимых пешках</SMNM_ConversionProtocolUnusableOnUnwavering>
 
-    <!-- Legal state messages -->
-    <SMNM_NoneProtocol>None</SMNM_NoneProtocol>
-    <SMNM_NoneProtocolTooltip>Снимите назначение текущего протокола и переведите манипулятор в режим минимальной функциональности.</SMNM_NoneProtocolTooltip>
-    <SMNM_RampageProtocol>Буйство</SMNM_RampageProtocol>
-    <SMNM_RampageProtocolTooltip>Вызывает ярость, заставляя пешку атаковать все пешки, не в буйстве, и получать значительные прибавки к статам.</SMNM_RampageProtocolTooltip>
-    <SMNM_StasisProtocol>Стазис</SMNM_StasisProtocol>
-    <SMNM_StasisProtocolTooltip>Выведите субъекта из строя, вырубив его и направив нейронные ресурсы на регенерацию.</SMNM_StasisProtocolTooltip>
-    <SMNM_TerrorProtocol>Террор</SMNM_TerrorProtocol>
-    <SMNM_TerrorProtocolTooltip>Запугать субъект, быстро усиливая подавление и предотвращая восстание при резком снижении настроения.</SMNM_TerrorProtocolTooltip>
-    <SMNM_NumbnessProtocol>Онемение</SMNM_NumbnessProtocol>
-    <SMNM_NumbnessProtocolTooltip>Притупляет сознание субъекта, получение значительных баффов настроения и в результате предотвращение любой боли.</SMNM_NumbnessProtocolTooltip>
-    <SMNM_HarvestProtocol>Жатва</SMNM_HarvestProtocol>
-    <SMNM_HarvestProtocolTooltip>Соберите все навыки субъекта за очки навыков и взлома, убив сознание. (Открывается диалог подтверждения)</SMNM_HarvestProtocolTooltip>
-    <SMNM_CultivationProtocol>Культивация</SMNM_CultivationProtocol>
-    <SMNM_CultivationProtocolTooltip>Накапливайте очки умений сервера, перехватывая обучение, вхолостую производя очки умений, но препятствуя любому обучению.</SMNM_CultivationProtocolTooltip>
-    <SMNM_ConversionProtocol>Преобразование</SMNM_ConversionProtocol>
-    <SMNM_ConversionProtocolTooltip>Преобразует очки взлома в пропаганду, снижая сопротивляемость, волю и уверенность субъекта в зависимости от его личной сопротивляемости.</SMNM_ConversionProtocolTooltip>
-    <SMNM_ReplacementProtocol>Замена</SMNM_ReplacementProtocol>
-    <SMNM_ReplacementProtocolTooltip>Замените сознание субъекта на новое, случайное. В процессе чип манипулятора сгорит, и сознание погибнет. (Открывается диалог подтверждения)</SMNM_ReplacementProtocolTooltip>
+  <!-- Legal state messages -->
+  <SMNM_NoneProtocol>Нет</SMNM_NoneProtocol>
+  <SMNM_NoneProtocolTooltip>Снять назначенный сейчас протокол и перевести манипулятор в режим минимальной функциональности.</SMNM_NoneProtocolTooltip>
+  <SMNM_RampageProtocol>Буйство</SMNM_RampageProtocol>
+  <SMNM_RampageProtocolTooltip>Вызывает ярость, заставляя пешку атаковать все пешки, не в буйстве, и получать значительные прибавки к характеристикам.</SMNM_RampageProtocolTooltip>
+  <SMNM_StasisProtocol>Стазис</SMNM_StasisProtocol>
+  <SMNM_StasisProtocolTooltip>Выведите подопытного из строя, вырубив его и направив нейронные ресурсы на регенерацию.</SMNM_StasisProtocolTooltip>
+  <SMNM_TerrorProtocol>Террор</SMNM_TerrorProtocol>
+  <SMNM_TerrorProtocolTooltip>Запугать подопытного, быстро усиливая подавление и предотвращая восстание при резком снижении настроения.</SMNM_TerrorProtocolTooltip>
+  <SMNM_NumbnessProtocol>Онемение</SMNM_NumbnessProtocol>
+  <SMNM_NumbnessProtocolTooltip>Притупление сознания подопытного, получение значительной прибавки к настроению и в результате предотвращение любой боли.</SMNM_NumbnessProtocolTooltip>
+  <SMNM_HarvestProtocol>Жатва</SMNM_HarvestProtocol>
+  <SMNM_HarvestProtocolTooltip>Собирает все навыки подопытного меняя очки навыков и взлома, убив сознание. (Открывается диалог подтверждения)</SMNM_HarvestProtocolTooltip>
+  <SMNM_CultivationProtocol>Культивация</SMNM_CultivationProtocol>
+  <SMNM_CultivationProtocolTooltip>Накапливайте очки навыков на сервер, перехватывая обучение, производя очки умений, но препятствуя любому обучению.</SMNM_CultivationProtocolTooltip>
+  <SMNM_ConversionProtocol>Преобразование</SMNM_ConversionProtocol>
+  <SMNM_ConversionProtocolTooltip>Преобразует очки взлома в пропаганду, снижая сопротивляемость, волю и уверенность подопытного в зависимости от его личной сопротивляемости.</SMNM_ConversionProtocolTooltip>
+  <SMNM_ReplacementProtocol>Замена</SMNM_ReplacementProtocol>
+  <SMNM_ReplacementProtocolTooltip>Замените сознание подопытного на новое, случайное. В процессе чип манипулятор сгорит, а сознание погибнет. (Открывается диалог подтверждения)</SMNM_ReplacementProtocolTooltip>
 
 </LanguageData>
